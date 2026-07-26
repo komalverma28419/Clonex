@@ -1,0 +1,46 @@
+import React from 'react'
+import Button from '../ui/Button'
+import heroImg from "../../assets/images/heroImg.png"
+import bgHero from "../../assets/images/bgHero.png"
+import playStore from '../../assets/images/playStore.png'
+import appStore from '../../assets/images/appStore.png'
+import { ArrowRight } from 'lucide-react'
+
+const Hero = () => {
+  return (
+    <section className='py-10 xl:py-14 relative overflow-hidden'>
+      <div className='absolute bottom-4 right-0 lg:-right-28 xl:right-0 lg:block hidden'>
+        <img src={bgHero} alt=""  className=''/>
+      </div>
+      <div className='max-w-7xl mx-auto px-6 md:px-8 lg:px-12 xl:px-14'>
+        <div className='grid lg:grid-cols-2 grid-cols-1 gap-8'>
+          <div className=''>
+            <span className='text-[#133FE3] text-xs tracking-[0.4px]'>INTRODUCING</span>
+            <h1 className='text-[42px] font-bold leading-14 dark:text-dark-text  text-dark mt-6'>Energize your Tele Calling Efforts with Data-driven Call Insights</h1>
+            <p className='text-font dark:text-dark-muted mt-6'>Track the calling performance of all team members from a central dashboard with Callyzer mobile app.</p>
+            <div className='mt-8 flex gap-8'>
+              <Button text="Get Started for Free" size='md' shine/>
+              <Button text="Learn More" variant='tertiary' size='md' icon={<ArrowRight size={18}/>} shine/>
+            </div>
+          </div>
+
+          <div className='relative z-10 hidden lg:block'>
+            <img src={heroImg} alt="" />
+
+            <div className='flex items-center justify-end gap-4'>
+              <a href=""><img src={appStore} alt="Download on the App Store" /></a>
+              <a href=""><img src={playStore} alt="Get it on Google Play" /></a>
+            </div>
+
+          </div>
+          <div>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Hero
