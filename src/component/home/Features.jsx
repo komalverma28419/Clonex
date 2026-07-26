@@ -11,7 +11,7 @@ const Features = () => {
     const {theme} = useTheme()
   return (
     <section className=' py-6 md:py-10 xl:py-14 bg-[#FAFAFA]  dark:bg-[#02061a]'>
-        <div className='max-w-7xl mx-auto px-6 md:px-8 lg:px-12 xl:px-14'>
+        <div className='max-w-7xl mx-auto px-7 lg:px-12 xl:px-14'>
             <div className='grid grid-cols-1 lg:grid-cols-2  gap-10'>
                 <div>
                     <Title text="OUR FEATURES" circleColor="#EFA434"/>

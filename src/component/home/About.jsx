@@ -10,7 +10,7 @@ const About = () => {
     }
   return (
     <section className=' py-6 md:py-10 xl:py-14'>
-      <div className='max-w-7xl mx-auto px-6 md:px-8 lg:px-12 xl:px-14'>
+      <div className='max-w-7xl mx-auto px-7 lg:px-12 xl:px-14'>
         <div className='grid grid-cols-1 xl:grid-cols-[1.5fr_2fr] gap-6'>
             <div className='space-y-7'>
                 <Title text="About us" circleColor="#F2055C"/>

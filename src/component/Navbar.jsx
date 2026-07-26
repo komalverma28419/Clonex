@@ -37,7 +37,7 @@ const Navbar = () => {
  const {theme} = useTheme()
   return (
     <header className='sticky top-0 z-50 h-20 w-full shadow bg-white dark:bg-[#0B0F19]'>
-      <div className='max-w-7xl w-full h-full mx-auto  px-6 md:px-8 lg:px-12 xl:px-14 py-2 flex items-center justify-between'>
+      <div className='max-w-7xl w-full h-full mx-auto  px-7 lg:px-12 xl:px-14 py-2 flex items-center justify-between'>
         <NavLink to='/'>
           <img src={theme ==="dark"? darkLogo : logo} alt="logo" className=' h-10 lg:h-14 '/>
         </NavLink>
@@ -72,7 +72,7 @@ const Navbar = () => {
         </div>
         <div 
           className={`absolute top-full left-0 w-full bg-white dark:bg-[#0B0F19]  transition-all duration-300 
-            ease-in-out min-[850px]:hidden overflow-hidden ${isOpen ? 'max-h-125 opacity-100 py-4' : 'max-h-0 opacity-0 py-0'
+            ease-in-out min-[900px]:hidden overflow-hidden ${isOpen ? 'max-h-125 opacity-100 py-4' : 'max-h-0 opacity-0 py-0'
           }`}
         >
           <nav className='flex flex-col gap-4 px-6'>

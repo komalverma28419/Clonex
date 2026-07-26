@@ -12,7 +12,7 @@ const Hero = () => {
       <div className='absolute bottom-4 right-0 lg:-right-28 xl:right-0 lg:block hidden'>
         <img src={bgHero} alt=""  className=''/>
       </div>
-      <div className='max-w-7xl mx-auto px-6 md:px-8 lg:px-12 xl:px-14'>
+      <div className='max-w-7xl mx-auto px-7 lg:px-12 xl:px-14'>
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-8'>
           <div className=''>
             <span className='text-[#133FE3] text-xs tracking-[0.4px]'>INTRODUCING</span>
