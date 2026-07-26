@@ -2,7 +2,6 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
-
 html {
   color-scheme: light;
 }
@@ -51,12 +50,6 @@ Secondary text:
 dark:text-gray-400 */
 
 
-
-@theme {
-  --animate-borderMove: borderMove 3s linear infinite;
-} */
-
-/* Telecalling Wave Border */
 .wave-border {
   position: absolute;
   inset: -40%;

@@ -14,11 +14,12 @@ const About = () => {
         <div className='grid grid-cols-1 xl:grid-cols-[1.5fr_2fr] gap-6'>
             <div className='space-y-7'>
                 <Title text="About us" circleColor="#F2055C"/>
-                <h3 className='text-dark dark:text-dark-text font-extrabold text-3xl lg:text-4xl'>About Close call</h3>
-                <p className='text-font dark:text-dark-muted leading-normal md:leading-7 text-sm md:text-base'>Clonex is a modern business communication platform designed to simplify call management 
-                    and improve team productivity. It enables businesses to track, manage, and analyze call 
-                    activities through an intuitive dashboard, providing real-time insights into team 
-                    performance and customer interactions.
+                <h3 className='text-dark dark:text-dark-text font-extrabold text-xl md:text-3xl lg:text-4xl'>About Close call</h3>
+                <p className='text-font dark:text-dark-muted leading-normal md:leading-7 text-sm
+                  md:text-base'>Clonex is a modern business communication platform designed to simplify 
+                  call management and improve team productivity. It enables businesses to track, manage, 
+                  and analyze call activities through an intuitive dashboard, providing real-time insights
+                  into team performance and customer interactions.
                 </p>
             </div>
 
