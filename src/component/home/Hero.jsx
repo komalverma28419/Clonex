@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section className='py-10 xl:py-14 relative overflow-hidden'>
+    <section className='py-6 md:py-10 xl:py-14 relative overflow-hidden'>
       <div className='absolute bottom-4 right-0 lg:-right-28 xl:right-0 lg:block hidden'>
         <img src={bgHero} alt=""  className=''/>
       </div>
@@ -16,7 +16,7 @@ const Hero = () => {
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-8'>
           <div className=''>
             <span className='text-[#133FE3] text-xs tracking-[0.4px]'>INTRODUCING</span>
-            <h1 className='text-2xl md:text-3xl lg:text-[42px] font-bold leading-14 dark:text-dark-text  text-dark mt-6'>Energize your Tele Calling Efforts with Data-driven Call Insights</h1>
+            <h1 className='text-2xl md:text-3xl lg:text-[42px] font-bold leading-normal md:leading-10 lg:leading-14 dark:text-dark-text  text-dark mt-6'>Energize your Tele Calling Efforts with Data-driven Call Insights</h1>
             <p className='text-font dark:text-dark-muted mt-6 md:text-base text-sm'>Track the calling performance of all team members from a central dashboard with Callyzer mobile app.</p>
             <div className='mt-8 flex flex-col sm:flex-row  gap-8'>
               <Button text="Get Started for Free" size='md' shine/>
