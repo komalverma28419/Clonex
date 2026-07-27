@@ -48,7 +48,7 @@ const Button = ({
           <span
             className=" absolute top-0 -left-[150%] h-full w-14 -skew-x-12 bg-gradient-to-r 
             from-transparent via-white/70 to-transparent opacity-0 transition-all duration-700
-            group-hover:left-[150%] group-hover:opacity-100"
+            group-hover:left-[150%] group-hover:opacity-20"
           />
         </span>
       )}
