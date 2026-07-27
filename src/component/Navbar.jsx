@@ -36,7 +36,7 @@ const Navbar = () => {
 
  const {theme} = useTheme()
   return (
-    <header className='sticky top-0 z-50 h-20 w-full shadow bg-white dark:bg-[#0B0F19]'>
+    <header className='sticky top-0 z-50 h-20 w-full shadow bg-white dark:bg-[#202738]'>
       <div className='max-w-7xl w-full h-full mx-auto  px-7 lg:px-12 xl:px-14 py-2 flex items-center justify-between'>
         <NavLink to='/'>
           <img src={theme ==="dark"? darkLogo : logo} alt="logo" className=' h-10 lg:h-14 '/>
