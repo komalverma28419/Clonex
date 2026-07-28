@@ -32,13 +32,13 @@ const Review = () => {
  
   
   return (
-    <section className='py-6 md:py-10 xl:py-14 bg-[#FAFAFA] dark:bg-[#070c27]'>
+    <section className='py-6 md:py-10 xl:py-14 bg-[#FAFAFA] dark:bg-dark-background'>
       <div className='max-w-7xl mx-auto px-7 lg:px-12 xl:px-14'>
         <div className=''>
           <h3 className=' text-2xl lg:text-3xl text-dark dark:text-dark-text font-bold text-center'>
             What our clients says about us
           </h3>
-          <div className='flex items-center gap-6 bg-[#0742A6] dark:bg-dark-background rounded-3xl mt-8 p-6'>
+          <div className='flex items-center gap-6 bg-[#0742A6] dark:bg-dark-alternate rounded-3xl mt-8 p-6'>
             <button onClick={handlePrev} disabled = {currentIndex === 0}
             className={`w-10 h-10 sm:w-11 sm:h-11 xl:w-12 xl:h-12 rounded-full flex items-center justify-center shrink-0 transition-all duration-300
               ${currentIndex === 0 ? "bg-gray-400 cursor-not-allowed opacity-50"

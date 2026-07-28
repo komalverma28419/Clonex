@@ -6,7 +6,8 @@ import TrustedBy from '../component/shared/TrustedBy'
 import Crm from '../component/home/Crm'
 import Growth from '../component/home/Growth'
 import Review from '../component/home/Review'
-// import TrustedBy from '../component/shared/TrustedBy'
+import PricingPlan from '../component/shared/pricing/PricingPlan'
+
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
      <Crm/>
      <Growth/>
      <Review/>
+     <PricingPlan/>
     </>
   )
 }

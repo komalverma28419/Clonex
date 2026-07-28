@@ -43,7 +43,7 @@ const Navbar = () => {
         </NavLink>
 
         <nav className='hidden min-[900px]:flex items-center gap-4 lg:gap-6'>
-          <ul className='flex items-center gap-4 lg:gap-6 '>
+          <ul className='flex items-center gap-4 xl:gap-6'>
             {navItems.map((item) =>(
             <li key={item.name}>
               <NavLink  to={item.path} className={({isActive}) => ` font-medium text-sm 
