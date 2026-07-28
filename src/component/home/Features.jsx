@@ -1,6 +1,6 @@
 import React from 'react'
-import { features } from '../../data/featureData'
 import FeatureSection from './FeatureSection'
+import { features } from '../../data/featureData'
 
 const Features = () => {
   return (

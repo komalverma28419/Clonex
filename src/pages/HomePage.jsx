@@ -7,6 +7,7 @@ import Crm from '../component/home/Crm'
 import Growth from '../component/home/Growth'
 import Review from '../component/home/Review'
 import PricingPlan from '../component/shared/pricing/PricingPlan'
+import FAQ from '../component/shared/faq/FAQ'
 
 
 const HomePage = () => {
@@ -20,6 +21,7 @@ const HomePage = () => {
      <Growth/>
      <Review/>
      <PricingPlan/>
+     <FAQ/>
     </>
   )
 }

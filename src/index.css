@@ -36,32 +36,6 @@ body {
 
 
 /* ----------------------------moving border---------------------------------- */
-/* .wave-border {
-  position: absolute;
-  inset: -40%;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    transparent 70deg,
-    rgba(59,130,246,0.95) 95deg,
-    rgba(19,63,227,0.95) 120deg,
-    rgba(242,5,92,0.95) 145deg,
-    transparent 170deg,
-    transparent 360deg
-  );
-  animation: waveBorderSpin 2.6s linear infinite;
-  filter: blur(10px);
-}
-
-@keyframes waveBorderSpin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 
 .wave-border {
   position: absolute;
@@ -98,3 +72,4 @@ body {
     transform: rotate(360deg);
   }
 }
+ 
