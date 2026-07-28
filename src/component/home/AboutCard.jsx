@@ -5,7 +5,8 @@ const AboutCard = ({ imageSrc, category, title, onArrowClick }) => {
   return (
     <div className="group relative max-w-[230px] sm:max-w-none w-full aspect-[2/3] rounded-xl overflow-hidden cursor-pointer">
       {/* Waveform Border - Dark mode only */}
-      <div className="hidden dark:block absolute inset-0 rounded-xl overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <div className="hidden dark:block absolute inset-0 rounded-xl overflow-hidden opacity-100 md:opacity-0
+       md:group-hover:opacity-100 transition-opacity duration-300">
         <div className="wave-border" />
       </div>
 
