@@ -11,7 +11,7 @@ const FaqItem = ({item, open, setOpen}) => {
           ${open ? "text-white font-bold text-lg lg:text-xl" : "text-dark dark:text-dark-text"}`}>
           {item.question}
         </span>
-        <span className='w-6 h-6 rounded-full flex items-center justify-center bg-white'>
+        <span className='sm:w-6 sm:h-6 w-5 h-5 rounded-full flex items-center justify-center bg-white shrink-0'>
           {open ? (<X size={18} className='text-primary'/>) : <Plus size={18} className='text-primary'/>}
         </span>
       </button>
@@ -23,7 +23,7 @@ const FaqItem = ({item, open, setOpen}) => {
 
       <div className={`overflow-hidden transition-all duration-500
         ${open ? "max-h-40 opacity-100 mt-3" :"max-h-0 opacity-0"}`}>
-        <p className='text-sm sm:text-[15px] text-white/80 dark:text-dark-muted leading-normal md:leading-7 pr-10'>{item.answer}</p>
+        <p className='text-sm sm:text-[15px] text-white/80 dark:text-dark-muted leading-normal md:leading-7'>{item.answer}</p>
       </div>
     </div>
   )

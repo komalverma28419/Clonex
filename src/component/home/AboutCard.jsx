@@ -18,7 +18,9 @@ const AboutCard = ({ imageSrc, category, title, onArrowClick }) => {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#133FE3]/50 to-transparent text-white px-6 py-5 flex flex-col justify-between -translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#133FE3]/50 
+        to-transparent text-white px-6 py-5 flex flex-col justify-between transition-transform
+        duration-500 ease-out translate-y-0 md:-translate-y-full md:group-hover:translate-y-0">
           <div className="mt-20 space-y-5">
             <span className="text-sm font-light">{category}</span>
             <h3 className="text-xl md:text-2xl font-semibold leading-snug">
