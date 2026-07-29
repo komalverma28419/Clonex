@@ -33,7 +33,7 @@ const NewsLetter = () => {
     <section className="py-6 md:py-10 xl:py-14">
       <div className="max-w-7xl mx-auto px-7 lg:px-12 xl:px-14">
         <div className="relative overflow-hidden rounded-xl bg-[#232E52]">
-          <div className="hidden sm:block absolute -top-16 -left-20 h-40 w-40 rounded-full border-20 border-[#F7DF61]" />
+          <div className="absolute  -top-16 -left-20 w-34 h-34 sm:h-40 sm:w-40 rounded-full border-16 sm:border-20 border-[#F7DF61]" />
           <div className="relative z-10 px-6 py-14">
 
             <h3 className="text-center text-2xl lg:text-3xl font-bold text-white">
