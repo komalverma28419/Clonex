@@ -42,7 +42,7 @@ const Navbar = () => {
           <img src={theme ==="dark"? darkLogo : logo} alt="logo" className=' h-10 lg:h-14 '/>
         </NavLink>
 
-        <nav className='hidden min-[900px]:flex items-center gap-4 lg:gap-6'>
+        <nav className='hidden min-[900px]:flex items-center gap-4 xl:gap-6'>
           <ul className='flex items-center gap-4 xl:gap-6'>
             {navItems.map((item) =>(
             <li key={item.name}>

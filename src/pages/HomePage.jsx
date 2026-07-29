@@ -8,6 +8,7 @@ import Growth from '../component/home/Growth'
 import Review from '../component/home/Review'
 import PricingPlan from '../component/shared/pricing/PricingPlan'
 import FAQ from '../component/shared/faq/FAQ'
+import NewsLetter from '../component/shared/NewsLetter'
 
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
      <Review/>
      <PricingPlan/>
      <FAQ/>
+     <NewsLetter/>
     </>
   )
 }

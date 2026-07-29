@@ -39,7 +39,7 @@ const Button = ({
     <button
       type={type}
       onClick={onClick}
-      className={`${baseStyle} ${sizes[size]} ${variants[variant]} ${className}`}
+      className={`${className} ${baseStyle} ${sizes[size]} ${variants[variant]} `}
       {...props}
     >
       {shine && (
