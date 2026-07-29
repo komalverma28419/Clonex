@@ -91,14 +91,14 @@ const Footer = () => {
           </div>
 
           {/* Company & Resources */}
-          <div className="grid grid-cols-3 items-center justify-items-center">
+          <div className="grid grid-cols-3  gap-4 items-start justify-items-start">
             {footerLinks.map((column) => (
-            <nav key={column.title} aria-label={column.title}>
+            <nav key={column.title} aria-label={column.title} className="w-full">
 
               <h3 className="text-base sm:text-lg font-semibold text-white mt-2">
                 {column.title}
               </h3>
-              <ul className="mt-5 space-y-3">
+              <ul className="mt-2 space-y-1 sm:space-y-3">
                 {column.links.map((link) => (
                   <li key={link.name}>
                     <a href={link.href}
