@@ -52,6 +52,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           ))}
+         
           </ul>
 
           <div className='flex gap-4'>

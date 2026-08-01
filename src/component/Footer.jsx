@@ -1,45 +1,3 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-// import logo from '../assets/images/logo.png'
-// import darkLogo from '../assets/images/darkLogo.png'
-// import {useTheme} from "../context/ThemeContext"
-// import { footerLinks } from '../data/footerData'
-
-// const Footer = () => {
-//     const {theme} = useTheme()
-//   return (
-//     <footer className='py-6 md:py-10 xl:py-14'>
-//       <div className='max-w-7xl mx-auto px-7 lg:px-12 xl:px-14'>
-//        <div>
-//             <div>
-//                 <Link to='/'><img src={theme === "light" ? logo : darkLogo} alt="footer_logo" className='h-10 lg:h-14'/></Link>
-//                 <p>Build smarter communication with our modern CRM platform.</p>
-//             </div>
-//             <div>
-//                 {footerLinks.map((column) =>(
-//                     <nav key={column.title} aria-label={column.title}>
-//                         <h3>{column.title}</h3>
-//                         <ul>
-//                             {column.links.map((link) =>(
-//                                 <li key={link.name}>
-//                                     <a href={link.href}>
-//                                         {link.name}
-//                                     </a>
-//                                 </li>
-//                             ))}
-//                         </ul>
-//                     </nav>
-//                 ))}
-//             </div>
-//        </div>
-//       </div>
-//     </footer>
-//   )
-// }
-
-// export default Footer
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
@@ -52,7 +10,7 @@ const Footer = () => {
   const { theme } = useTheme();
 
   return (
-    <footer className="py-10 lg:py-14 bg-primary dark:bg-dark-alternate">
+    <footer className="py-10 lg:py-14 bg-primary dark:bg-[#202738]">
       <div className="max-w-7xl mx-auto px-7 lg:px-12 xl:px-14">
 
         {/* Top Section */}
@@ -80,7 +38,8 @@ const Footer = () => {
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border dark:border-dark-border transition-all duration-300 hover:bg-primary hover:text-white"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border 
+                    border-border dark:border-dark-border transition-all duration-300 hover:bg-primary hover:text-white"
                   >
                     <Icon size={18} />
                   </a>
@@ -116,7 +75,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="my-6 border-t border-white/70 dark:border-dark-border" />
+        <div className="my-6 border-t border-white/70 dark:border-white/20" />
 
         {/* Bottom */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">

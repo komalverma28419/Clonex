@@ -72,4 +72,37 @@ body {
     transform: rotate(360deg);
   }
 }
- 
+
+
+/* -----------------------------------------input element--------------------------------------- */
+/* 
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+}
+  */
+
+@keyframes toast-progress {
+  from {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+}
+
+.animate-toast-progress {
+  width: 100%;
+  animation: toast-progress 3s linear backwards;
+}
+
