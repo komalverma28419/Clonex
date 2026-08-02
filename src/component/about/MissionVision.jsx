@@ -15,17 +15,17 @@ const MissionVision = () => {
         
         {/* Header Section */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800/80 border border-slate-300/60 dark:border-slate-700/60 backdrop-blur-md text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-200/80 dark:bg-slate-800/80 border border-slate-300/60 dark:border-slate-700/60 backdrop-blur-md text-xs font-semibold uppercase tracking-wider text-dark dark:text-dark-text">
             <span className="w-2 h-2 rounded-full bg-cyan-500 dark:bg-cyan-400 animate-ping" />
             Mission and Vision
           </div>
 
-          <p className="mt-4 text-font/60 dark:text-dark-muted/60">
+          <p className="mt-4 text-sm md:text-base text-font/60 dark:text-dark-muted/60">
             We are redefining how teams measure and maximize voice communication through cutting-edge neural intelligence.
           </p>
 
           {/* Interactive Toggle Tabs */}
-          <div className="mt-6 p-1.5 bg-slate-200/60 dark:bg-slate-800/60 border border-slate-300/50 dark:border-slate-700/50 backdrop-blur-xl rounded-2xl inline-flex gap-2">
+          <div className="mt-6 p-1.5 bg-slate-200/60 dark:bg-slate-800/60 border border-slate-300/50 dark:border-slate-700/50 backdrop-blur-xl rounded-xl inline-flex gap-2">
             {contentData.map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;
@@ -33,7 +33,7 @@ const MissionVision = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`relative flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-sm transition-all duration-300 ${
+                  className={`relative flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium text-xs sm:text-sm transition-all duration-300 ${
                     isActive 
                       ? "text-slate-900 dark:text-white" 
                       : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200"
@@ -65,32 +65,32 @@ const MissionVision = () => {
                 <div className={`absolute -top-24 -right-24 w-80 h-80 rounded-full ${activeContent.colorTheme.glow} blur-[100px] pointer-events-none transition-colors duration-500`} />
                 
                 <div>
-                  <div className="flex items-center justify-between">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${activeContent.colorTheme.accentBg} ${activeContent.colorTheme.accentBorder} ${activeContent.colorTheme.accentText}`}>
+                  <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
+                    <span className={`px-3 py-1 rounded-md text-xs font-semibold border ${activeContent.colorTheme.accentBg} ${activeContent.colorTheme.accentBorder} ${activeContent.colorTheme.accentText}`}>
                       {activeContent.tagline}
                     </span>
-                    <span className="text-xs font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-2.5 py-1 rounded-md">
+                    <span className="text-xs text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-2.5 py-1 rounded-md">
                       {activeContent.metric}
                     </span>
                   </div>
 
-                  <h3 className="mt-8 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                  <h3 className="mt-6 text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
                     {activeContent.type}
                   </h3>
 
-                  <p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
+                  <p className="mt-2 text-font dark:text-dark-muted text-sm  md:text-lg">
                     {activeContent.description}
                   </p>
                 </div>
 
-                <div className="mt-10 pt-6 border-t border-slate-200/80 dark:border-slate-700/50 flex items-center justify-between">
+                <div className="mt-6 pt-4 border-t border-slate-200/80 dark:border-slate-700/50 flex items-center justify-between sm:flex-row flex-col">
                   <span className="text-xs text-slate-500 dark:text-slate-400">Target Benchmark 2026</span>
                   <a
                     href="#learn-more"
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition-colors"
+                    className="inline-flex items-center gap-1 text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 dark:hover:text-cyan-300 transition-colors"
                   >
                     <span>Read Whitepaper</span>
-                    <ArrowUpRight size={16} />
+                    <ArrowUpRight size={14} />
                   </a>
                 </div>
               </div>
@@ -102,16 +102,16 @@ const MissionVision = () => {
                   return (
                     <div
                       key={pillar.title}
-                      className="group/pillar p-6 rounded-2xl bg-white/50 dark:bg-slate-800/30 border border-slate-200/80 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700/80 hover:bg-white/80 dark:hover:bg-slate-800/50 backdrop-blur-xl transition-all duration-300 flex items-start gap-5 shadow-sm dark:shadow-none"
+                      className="group/pillar  p-4 md:p-6  rounded-2xl bg-white/50 dark:bg-slate-800/30 border border-slate-200/80 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700/80 hover:bg-white/80 dark:hover:bg-slate-800/50 backdrop-blur-xl transition-all duration-300 flex items-start gap-5 shadow-sm dark:shadow-none"
                     >
-                      <div className={`p-3 rounded-xl border ${activeContent.colorTheme.accentBg} ${activeContent.colorTheme.accentBorder} ${activeContent.colorTheme.accentText} shrink-0`}>
-                        <PillarIcon size={24} />
+                      <div className={` p-1.5 md:p-2 rounded-lg md:rounded-xl border ${activeContent.colorTheme.accentBg} ${activeContent.colorTheme.accentBorder} ${activeContent.colorTheme.accentText} shrink-0`}>
+                        <PillarIcon className="w-4 h-4 md:w-7 md:h-7" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-bold text-slate-900 dark:text-white group-hover/pillar:text-cyan-600 dark:group-hover/pillar:text-cyan-400 transition-colors">
+                        <h4 className="text-base md:text-lg font-bold text-slate-900 dark:text-white group-hover/pillar:text-cyan-600 dark:group-hover/pillar:text-cyan-400 transition-colors">
                           {pillar.title}
                         </h4>
-                        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        <p className="mt-1 text-sm text-font dark:text-dark-muted">
                           {pillar.detail}
                         </p>
                       </div>

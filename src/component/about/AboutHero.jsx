@@ -12,9 +12,8 @@ const AboutHero = () => {
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           
           <div>
-            <h1 className="text-dark dark:text-dark-text font-extrabold text-2xl md:text-3xl lg:text-4xl">
-              Empowering Businesses Through
-              <span className="text-primary"> Intelligent Call Solutions</span>
+            <h1 className="text-dark dark:text-dark-text md:leading-9 lg:leading-10 font-bold text-2xl md:text-3xl lg:text-4xl">
+              Empowering Businesses Through Intelligent Call Solutions
             </h1>
 
             <p className="mt-6 text-base text-font dark:text-dark-muted leading-8">
@@ -27,7 +26,6 @@ const AboutHero = () => {
               <Link to="/contact">
                 <Button text="Get Started" size="md" icon={<ArrowRight size={18} />} className="w-full sm:w-auto"/>
               </Link>
-
               <Link to="/demo" >
                 <Button text="Watch Demo" variant="tertiary" size="md" icon={<PlayCircle size={18}/>} className="w-full sm:w-auto"/>
               </Link>
