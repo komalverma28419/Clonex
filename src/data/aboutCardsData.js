@@ -9,17 +9,20 @@ export const aboutCardData = [
     imageSrc: aboutImg1,
     category: "Tracking",
     title: "Track Call",
+    linkTo: "/"
   },
   {
     id: 2,
     imageSrc: aboutImg2,
     category: "AI",
     title: "Smart Decisions",
+    linkTo: "/features"
   },
   {
     id: 3,
     imageSrc: aboutImg3,
     category: "Performance",
     title: "Boost Productivity",
+    linkTo: "/pricing"
   },
 ]

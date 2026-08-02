@@ -1,7 +1,14 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-const AboutCard = ({ imageSrc, category, title, onArrowClick }) => {
+const AboutCard = ({ imageSrc, category, title, onArrowClick, linkTo }) => {
+  const navigate =  useNavigate()
+  const handleNavigation = () =>{
+    if(linkTo){
+      navigate(linkTo)
+    }
+  }
   return (
     <div className="group relative max-w-[230px] sm:max-w-none w-full aspect-[2/3] rounded-xl overflow-hidden cursor-pointer">
       {/* Waveform Border - Dark mode only */}
@@ -30,9 +37,10 @@ const AboutCard = ({ imageSrc, category, title, onArrowClick }) => {
           </div>
 
           <button
-            onClick={onArrowClick}
+            onClick={handleNavigation}
             aria-label="View Project"
-            className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/40 flex items-center justify-center transition-all duration-300 hover:border-[#F2055C] hover:text-[#F2055C]"
+            className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/40 flex items-center 
+            justify-center transition-all duration-300 hover:border-[#F2055C] hover:text-[#F2055C]"
           >
             <ChevronRight size={20} />
           </button>
